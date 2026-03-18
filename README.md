@@ -1,9 +1,9 @@
-# devid
+# dev-id
 
-`dev-ID` e' una utility in C ANSI per Windows/MinGW32 che legge un file di configurazione nel formato:
+`dev-id` e' una utility in C ANSI per Windows/MinGW32 che legge un file di configurazione nel formato:
 
 ```text
-IP=192.168.0.0->192.168.0.0/255.255.255.0 index=7 devname=LAN
+IP=2.228.250.5->2.228.250.5/255.255.255.224 index=7 devname=wan1
 ```
 
 e produce una scansione multi-thread con:
