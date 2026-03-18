@@ -59,13 +59,14 @@ mingw32-make
 ## Uso con tuning porte e timeout
 
 ```powershell
-.\netscope-passive.exe --config examples\targets.conf --csv report.csv --log scan.log --tcp-ports 22,80,443,445,3389,8080,8443 --udp-ports 53,123,161 --icmp-timeout-ms 75 --tcp-timeout-ms 60 --udp-timeout-ms 75
+.\dev-id.exe --config examples\targets.conf --csv report.csv --log scan.log --tcp-ports 22,80,443,445,3389,8080,8443 --udp-ports 53,123,161 --icmp-timeout-ms 75 --tcp-timeout-ms 60 --udp-timeout-ms 75
 ```
 
 ## Lookup vendor online
 
 ```powershell
-.\netscope-passive.exe --config examples\targets.conf --csv report.csv --log scan.log --vendor-online
+.\dev-id.exe --config examples\targets.conf --csv dev-id-full.csv --log dev-id-full.log --oui data\oui.txt --vendor-online --tcp-ports 21,22,23,25,53,80,81,88,110,111,123,135,137,138,139,143,161,389,443,445,502,515,548,554,587,631,993,995,1723,1883,2049,2375,3306,3389,5000,5357,5432,5900,5985,5986,6379,8000,8080,8081,8088,8443,8883,9100,10001 --udp-ports 53,67,68,69,123,137,138,161,162,500,514,520,1900,3702,5353,5683,5684 --icmp-timeout-ms 120 --tcp-timeout-ms 120 --udp-timeout-ms 180
+
 ```
 
 ## Note pratiche
